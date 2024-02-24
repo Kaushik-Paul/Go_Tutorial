@@ -13,4 +13,23 @@ func main() {
 
 	newCard = "Five of Diamonds"
 	fmt.Println(newCard)
+
+	newCard = newCardFunc()
+	fmt.Println("Returned String: " + newCard)
+
+	// From separate file
+	printState()
+
+	// Arrays and slice
+	cards := []string{newCardFunc(), "Ace of diamonds"}
+	cards = append(cards, "Six of spades")
+
+	fmt.Println(cards)
+
+	// For loops
+
+}
+
+func newCardFunc() string {
+	return "Five of Diamonds"
 }
