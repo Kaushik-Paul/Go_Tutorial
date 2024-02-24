@@ -27,7 +27,9 @@ func main() {
 	fmt.Println(cards)
 
 	// For loops
-
+	for i, card := range cards {
+		fmt.Println("Looping: ", i, card)
+	}
 }
 
 func newCardFunc() string {
