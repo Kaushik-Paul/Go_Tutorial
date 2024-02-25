@@ -8,4 +8,6 @@ func main() {
 	fmt.Println("==================================================")
 
 	fmt.Println(cards.toString())
+
+	cards.saveToFile("my_cards")
 }
