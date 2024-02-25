@@ -361,3 +361,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/go,goland+all,goland+iml,goland,git,windows,linux,macos,visualstudiocode
+/my_cards
