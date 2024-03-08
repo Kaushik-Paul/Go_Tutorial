@@ -34,7 +34,7 @@ func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
 	loadedDeck := newDeckFromFile(testFileName)
 
 	if len(loadedDeck) != 16 {
-		t.Errorf("Expected 16 cards in deck, got %v", len(loadedDeck))
+		t.Errorf("Expected 16 cards in deck, but got %v", len(loadedDeck))
 	}
 
 	// Remove the created test file
