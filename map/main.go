@@ -29,4 +29,15 @@ func main() {
 
 	fmt.Println(colors3)
 
+	colors["green"] = "#00FF00"
+
+	// Iterate map
+	printMap(colors)
+
+}
+
+func printMap(c map[string]string) {
+	for key, value := range c {
+		fmt.Printf("Hex code for color %v is %v\n", key, value)
+	}
 }
