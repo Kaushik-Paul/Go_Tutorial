@@ -53,4 +53,8 @@ func main() {
 	jimPointer := &jim
 	jimPointer.updateFirstName("Jimmy")
 	jim.print()
+
+	// Another way
+	jim.updateFirstName("Jimmy22")
+	jim.print()
 }
