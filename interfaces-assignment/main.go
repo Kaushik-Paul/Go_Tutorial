@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+	"io"
+	"os"
+)
+
 func main() {
 	rc := triangle{
 		height: 5.6,
@@ -12,4 +18,14 @@ func main() {
 
 	printArea(rc)
 	printArea(sq)
+
+	fileName := os.Args[1]
+	f, err := os.Open(fileName)
+
+	if err != nil {
+		fmt.Println("Error: ", err)
+		os.Exit(1)
+	}
+
+	io.Copy(os.Stdout, f)
 }
